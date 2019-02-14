@@ -20,9 +20,9 @@ Para Redis y MongoDB se utilizan servicios en la nube ofrecidos por [Redis Labs]
 
 A continuación se describen los archivos y carpetas que forman parte del proyecto, así como la función que juega cada uno de ellos:
 
-- [app.yaml](proxy-api.yaml): Archivo de configuración de la aplicación.
+- [app.yaml](app.yaml): Archivo de configuración de la aplicación.
 - [requirements.txt](requirements.txt): Archivo que contiene las dependencias de la aplicación.
-- [config.py](app/config.py): Archivo de configuración de la aplicación.
+- [config.py](config.py): Archivo de configuración de la aplicación.
 
 
 ## 3. Instrucciones de uso
