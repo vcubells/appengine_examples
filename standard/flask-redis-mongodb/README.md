@@ -32,33 +32,16 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 3. Cree un proyecto en la [Consola de Google Cloud Platform](https://console.cloud.google.com). Póngale el nombre y ID que usted prefiera.
 4. Despliegue la aplicación en App Engine:
 
-`gcloud create -f proxy-api.yaml`
+`gcloud app deploy`
 
-11. Verifique que los servicios se encuentran funcionando correctamente:
-
-`kubectl get deployment`
-`kubectl get service`
-`kubectl get pod`
-
-12. Obtenga la URL del servicio. Ejecute varias veces este comando hasta que el valor EXTERNAL-IP se encuentre asignado:
-
-`kubectl get service`
-
-13. Acceda a la aplicación en un browser con la IP externa obtenida en el paso anterior.
-
-14. Para eliminar la aplicación y los servicios creados ejecute:
-
-`kubectl delete  -f proxy-api.yaml`
-
-15. Elimine el clúster desde la [Consola de Google Cloud Platform](https://console.cloud.google.com).
+5. Acceda a la aplicación mediante la URL mostrada como resultado del paso anterior.
 
 
 ## 4. Recursos
 
-Para conocer más sobre Kubernetes consulte la documentación oficial disponible en  [Kubernetes](https://kubernetes.io).
+Para conocer más sobre App Engine consulte la documentación oficial disponible en  [Google App Engine](https://cloud.google.com/appengine/).
 
-Para aprender a trabajar con el comando `kubectl`consulte la documentación oficial disponible en [Install and Set Up kubectl
-](
-https://kubernetes.io/docs/tasks/tools/install-kubectl/).
+Para aprender a trabajar con el comando `gcloud` consulte la documentación oficial disponible en [gcloud command-line tool overview](
+https://cloud.google.com/sdk/gcloud/).
 
 Para conocer más sobre Google Cloud Platform consulte la documentación oficial disponible en  [GCP Documentation](https://cloud.google.com/docs/).
