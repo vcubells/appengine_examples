@@ -7,8 +7,6 @@ Para Redis y MongoDB se utilizan servicios en la nube ofrecidos por [Redis Labs]
 ## 1. Pre-requisitos
 
 * Tener instalado `docker`. Mas información se encuentra disponible en [Docker](https://www.docker.com/community-edition).
-* Tener instalado `kubectl`. Mas información se encuentra disponible en [Install and Set Up kubectl
-](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 * Tener una cuenta activa en [Google Cloud Platform](https://cloud.google.com/).
 * Tener una cuenta activa en Redis Labs o utilizar un servidor Redis local. Puede crear una cuenta gratuita [aquí](https://app.redislabs.com/#/sign-up/cloud).
 * Tener una cuenta activa en [mLab](https://mlab.com/) o utilizar un servidor de MongoDB local. Puede crear una cuenta gratuita [aquí](https://mlab.com/signup/).
@@ -30,11 +28,19 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 1. Descargue el repositorio a una carpeta de su computadora utilizando el comando `git clone`.
 2. Cámbiese a la carpeta del proyecto.
 3. Cree un proyecto en la [Consola de Google Cloud Platform](https://console.cloud.google.com). Póngale el nombre y ID que usted prefiera.
-4. Despliegue la aplicación en App Engine:
+4. Inicie sesión en su cuenta de GCP desde su terminal:
+
+`gcloud auth login`
+
+5. Active su proyecto:
+
+`gcloud config set project PROJECT_ID`
+
+6. Despliegue la aplicación en App Engine:
 
 `gcloud app deploy`
 
-5. Acceda a la aplicación mediante la URL mostrada como resultado del paso anterior.
+7. Acceda a la aplicación mediante la URL mostrada como resultado del paso anterior.
 
 
 ## 4. Recursos
