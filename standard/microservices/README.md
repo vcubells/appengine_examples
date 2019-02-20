@@ -34,16 +34,22 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 2. Cámbiese a la carpeta del proyecto.
 3. Verifique que el servicio principal funciona localmente, creando un entorno virtual, instalando las dependencias y ejecutando el servidor de desarrollo:
 
-`virtualenv env`                                                       
+`virtualenv env`  
+
 `source env/bin/activate`
+
 `pip install -r requirements.txt`
+
 `python main.py`
 
 4. Abra otra Terminal y cámbiese a la carpeta `backend`. Verifique que el servicio `backend` funciona localmente, creando un entorno virtual, instalando las dependencias y ejecutando el servidor de desarrollo:
 
 `virtualenv env`                                                       
+
 `source env/bin/activate`
+
 `pip install -r requirements.txt`
+
 `python main.py`
 
 5. Abra un navegador y acceda a las siguientes URLs:

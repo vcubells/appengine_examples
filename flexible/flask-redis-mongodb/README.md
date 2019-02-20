@@ -28,9 +28,12 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 2. Cámbiese a la carpeta del proyecto.
 3. Verifique que el proyecto funciona localmente, creando un entorno virtual, instalando las dependencias y ejecutando el servidor de desarrollo:
 
-`virtualenv env`                                                       
+`virtualenv env`
+
 `source env/bin/activate`
+
 `pip install -r requirements.txt`
+
 `python main.py`
 
 3. Cree un proyecto en la [Consola de Google Cloud Platform](https://console.cloud.google.com). Póngale el nombre y ID que usted prefiera.
