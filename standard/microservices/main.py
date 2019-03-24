@@ -8,7 +8,7 @@ services_config.init_app(app)
 @app.route('/', methods=['GET'])
 def home():
     # default service
-    return 'Soy el servicio principal actualizado con Cloud Build'
+    return 'Soy el servicio principal v2 CB'
 
 @app.route('/<service>', methods=['GET'])
 def back(service):
