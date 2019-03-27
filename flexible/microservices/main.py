@@ -16,7 +16,7 @@ def auth_get_token():
     params = {
         "client_id": config.CLIENT_ID,
         "client_secret": config.CLIENT_SECRET,
-        "audience": "https://citas-api",
+        "audience": "https://test-vcn-ep.appspot.com/",
         "grant_type": "client_credentials"
         }
 
@@ -26,7 +26,7 @@ def auth_get_token():
     
     return jsonify(result.json())
 
-@app.route('/', methods=['GET'])
+@app.route('/main', methods=['GET'])
 def home():
     # default service
     return 'Soy el servicio principal'

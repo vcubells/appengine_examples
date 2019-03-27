@@ -11,8 +11,23 @@ produces:
 schemes:
 - "https"
 - "http"
+
+x-google-management:
+  metrics:
+    - name: "read-requests"
+      displayName: "Main Requests"
+      valueType: INT64
+      metricKind: DELTA
+  quota:
+    limits:
+      - name: "read-limit"
+        metric: "read-requests"
+        unit: "1/min/{project}"
+        values:
+          STANDARD: 10
+
 paths:
-  "/":
+  "/main":
     get:
       summary: "Servicio principal"
       description: "Obtiene la respuesta del servicio principal"
@@ -23,6 +38,9 @@ paths:
         200:
           description: OK
       parameters: []
+      x-google-quota:
+        metricCosts:
+          "read-requests": 1
       security:
       - api_key: []
       - auth0_jwk: []
@@ -71,3 +89,4 @@ securityDefinitions:
       x-google-issuer: "https://vcubells.auth0.com/"
       x-google-jwks_uri: "https://vcubells.auth0.com/.well-known/jwks.json"
       x-google-audiences: "https://citas-api"
+
