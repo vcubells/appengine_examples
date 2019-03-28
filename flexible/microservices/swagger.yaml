@@ -42,7 +42,6 @@ paths:
         metricCosts:
           "read-requests": 1
       security:
-      - api_key: []
       - auth0_jwk: []
   /{service}:
     get:
@@ -61,7 +60,6 @@ paths:
         200:
           description: OK
       security:
-      - api_key: []
       - auth0_jwk: []
   /auth/get_token:
     get:
@@ -74,8 +72,9 @@ paths:
       responses:
         200:
           description: OK
-      security:
-      - api_key: []
+
+security:
+  - api_key: []
 
 securityDefinitions:
     api_key:
