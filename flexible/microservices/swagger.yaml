@@ -87,5 +87,5 @@ securityDefinitions:
       type: "oauth2"
       x-google-issuer: "https://vcubells.auth0.com/"
       x-google-jwks_uri: "https://vcubells.auth0.com/.well-known/jwks.json"
-      x-google-audiences: "https://citas-api"
+      x-google-audiences: "https://test-vcn-ep.appspot.com"
 

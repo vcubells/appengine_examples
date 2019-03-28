@@ -82,7 +82,7 @@ A continuación se muestran los pasoa a seguir para habilitar la autenticación 
 
 1. Despliegue el servicio de Cloud Endpoints utilizando el comando:
 
-`gcloud endpoints services deploy openapi.yaml`
+`gcloud endpoints services deploy swagger.yaml`
 
 2. Consulte los servicios habilitados:
 
