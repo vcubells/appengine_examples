@@ -13,7 +13,7 @@ def active_sessions():
     redis = sessions.Sessions()
     dbsize = redis.get_active_sessions()
 
-    return jsonify({"Sesiones activas: ": dbsize})
+    return jsonify({"Sesiones activas V2: ": dbsize})
 
 
 @app.route("/", methods=['GET', 'POST'])

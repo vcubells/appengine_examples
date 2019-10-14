@@ -23,7 +23,7 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 
 ### 2.2 Servicio [backend](backend/)
 
-- [backend/app.yaml](backend/app.yaml): Archivo de configuración.
+- [backend/back.yaml](backend/back.yaml): Archivo de configuración.
 - [backend/main.py](backend/main.py): Código de la aplicación.
 - [backend/requirements.txt](backend/requirements.txt): Archivo que contiene las dependencias.
 
