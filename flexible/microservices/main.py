@@ -34,7 +34,7 @@ def home():
 @app.route('/<service>', methods=['GET'])
 def back(service):
     url = app.config['SERVICE_MAP'][service]
-    res = requests.get(url + '/')
+    res = requests.get(url + '/main')
     return res.content
 
 if __name__ == "__main__":

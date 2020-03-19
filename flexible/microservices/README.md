@@ -76,9 +76,9 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 
 ## Opcional (Configurar Cloud Endpoints)
 
-A continuación se muestran los pasoa a seguir para habilitar la autenticación de la API y el control de la misma utilizando [Google Cloud Endpoints](https://cloud.google.com/endpoints).
+A continuación se muestran los pasos a seguir para habilitar la autenticación de la API y el control de la misma utilizando [Google Cloud Endpoints](https://cloud.google.com/endpoints).
 
-0. Antes de realizar cualquier operación, modifique los archivos `openapi.yaml` y `app-endpoints.yaml` y sustituya PROJECT_ID por el ID de su proyecto.
+0. Antes de realizar cualquier operación, modifique los archivos `swagger.yaml` y `app-endpoints.yaml` y sustituya PROJECT_ID por el ID de su proyecto.
 
 1. Despliegue el servicio de Cloud Endpoints utilizando el comando:
 

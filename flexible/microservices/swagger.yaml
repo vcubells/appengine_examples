@@ -59,6 +59,9 @@ paths:
       responses:
         200:
           description: OK
+      x-google-quota:
+        metricCosts:
+          "read-requests": 2
       security:
       - auth0_jwk: []
   /auth/get_token:
